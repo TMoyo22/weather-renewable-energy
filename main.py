@@ -34,11 +34,11 @@ col1, col2, col3, col4 = st.columns(4)
 with col1:
     st.page_link("pages/1_EDA.py", label=" EDA", icon="🔍")
 with col2:
-    st.page_link("pages/2_Statistical_Analysis.py", label="Time Series", icon="📈")
+    st.page_link("pages/2_Statistical_Analysis.py", label="Statistical", icon="📈")
 with col3:
-    st.page_link("pages/3_Time_Series_Analysis.py", label=" Predictive", icon="🤖")
+    st.page_link("pages/3_Time_Series_Analysis.py", label="Time Series", icon="🤖")
 with col4:
-    st.page_link("pages/4_Predictive_Analysis.py", label=" Statistical", icon="📊")
+    st.page_link("pages/4_Predictive_Analysis.py", label="Predictive", icon="📊")
 
 
 st.markdown("### 🧾 Dataset Preview")
