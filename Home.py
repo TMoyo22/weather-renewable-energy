@@ -32,13 +32,13 @@ st.markdown("""Click on the buttons below to view other aspects of the analysis.
 
 col1, col2, col3, col4 = st.columns(4)
 with col1:
-    st.page_link("pages/1_Exploratory.py", label="🔍 EDA")
+    st.page_link("pages/1_Exploratory.py", label="EDA")
 with col2:
-    st.page_link("pages/2_Statistical.py", label="📈 Statistical")
+    st.page_link("pages/2_Statistical.py", label="Statistical")
 with col3:
-    st.page_link("pages/3_Time.py", label="🤖 Time Series")
+    st.page_link("pages/3_Time.py", label="Time Series")
 with col4:
-    st.page_link("pages/4_Predictive.py", label="📊 Predictive")
+    st.page_link("pages/4_Predictive.py", label="Predictive")
 
 st.markdown("### 🧾 Dataset Preview")
 st.markdown(
@@ -52,4 +52,4 @@ if os.path.exists(csv_path):
     df = pd.read_csv(csv_path)
     st.dataframe(df.head())
 else:
-    st.error(f"❌ Could not find the file at `{csv_path}`. Please check the path.")
+    st.error(f"Could not find the file at `{csv_path}`. Please check the path.")
