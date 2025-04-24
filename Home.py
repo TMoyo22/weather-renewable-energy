@@ -32,25 +32,13 @@ st.markdown("""Click on the buttons below to view other aspects of the analysis.
 
 col1, col2, col3, col4 = st.columns(4)
 with col1:
-    st.markdown(
-        '<a href="pages/1_Exploratory_Data_Analysis.py" style="text-decoration:none;"><button style="background-color:#4CAF50; color:white; border:none; padding:10px; border-radius:5px;">🔍 EDA</button></a>',
-        unsafe_allow_html=True,
-    )
+    st.page_link("pages/1_Exploratory Data Analysis.py", label="🔍 EDA", icon="")
 with col2:
-    st.markdown(
-        '<a href="pages/2_Statistical_Analysis.py" style="text-decoration:none;"><button style="background-color:#2196F3; color:white; border:none; padding:10px; border-radius:5px;">📈 Statistical</button></a>',
-        unsafe_allow_html=True,
-    )
+    st.page_link("pages/2_Statistical Analysis.py", label="📈 Statistical", icon="")
 with col3:
-    st.markdown(
-        '<a href="pages/3_Time_Series_Analysis.py" style="text-decoration:none;"><button style="background-color:#FF9800; color:white; border:none; padding:10px; border-radius:5px;">🤖 Time Series</button></a>',
-        unsafe_allow_html=True,
-    )
+    st.page_link("pages/3_Time Series Analysis.py", label="🤖 Time Series", icon="")
 with col4:
-    st.markdown(
-        '<a href="pages/4_Predictive_Analysis.py" style="text-decoration:none;"><button style="background-color:#9C27B0; color:white; border:none; padding:10px; border-radius:5px;">📊 Predictive</button></a>',
-        unsafe_allow_html=True,
-    )
+    st.page_link("pages/4_Predictive Analysis.py", label="📊 Predictive", icon="")
 
 st.markdown("### 🧾 Dataset Preview")
 st.markdown(
