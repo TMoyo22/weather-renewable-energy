@@ -42,6 +42,37 @@ ax2.set_ylabel("Predicted Energy delta [Wh]")
 ax2.set_title(f"{model_choice} - Actual vs Predicted Scatter")
 st.pyplot(fig2)
 
+
+with st.expander("🧪 Try Custom Prediction (Enter Your Own Weather Features)"):
+    st.markdown("Enter the values for each feature to predict solar energy generation:")
+
+    # Show the feature columns
+    input_features = X_train.columns.tolist()
+
+    # Create input widgets dynamically
+    user_input = {}
+    for feature in input_features:
+        dtype = X_train[feature].dtype
+        if dtype == "int64" or dtype == "float64":
+            min_val = float(X_train[feature].min())
+            max_val = float(X_train[feature].max())
+            mean_val = float(X_train[feature].mean())
+            user_input[feature] = st.number_input(
+                f"{feature} ({dtype})",
+                min_value=min_val,
+                max_value=max_val,
+                value=mean_val,
+            )
+        else:
+            st.write(f"⚠️ Feature {feature} not supported for manual input.")
+
+    # Prediction Button
+    if st.button("🔍 Predict Energy Delta"):
+        input_df = pd.DataFrame([user_input])
+        prediction = models[model_choice].predict(input_df)[0]
+        st.success(f"🌞 Predicted Energy delta [Wh]: `{prediction:.2f}`")
+
+
 # Display metrics
 st.markdown("### 📊 Model Performance")
 st.markdown(f"**Mean Absolute Error (MAE)**: `{mae:.2f}`")
