@@ -20,9 +20,7 @@ def load_data(path):
     return pd.read_csv(path)
 
 
-df = load_data(
-    "C:\\Users\\tatem\\Desktop\\weather-renewable-energy\\Dataset\\Renewable.csv"
-)
+df = load_data("/Dataset/Renewable.csv")
 
 # --- Section 1: Distribution Analysis using Violin & Boxplots ---
 st.subheader("🔍 Distribution of Energy Output under Weather Conditions")

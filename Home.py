@@ -47,7 +47,7 @@ st.markdown(
 )
 
 
-csv_path = "C:\\Users\\tatem\\Desktop\\weather-renewable-energy\\Dataset\\Renewable.csv"
+csv_path = "/Dataset/Renewable.csv"
 
 if os.path.exists(csv_path):
     df = pd.read_csv(csv_path)
