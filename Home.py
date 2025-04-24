@@ -32,13 +32,19 @@ st.markdown("""Click on the links below to view other aspects of the analysis.""
 
 col1, col2, col3, col4 = st.columns(4)
 with col1:
-    st.page_link("pages/1_EDA.py", label=" EDA", icon="🔍")
+    st.markdown("[🔍 EDA](pages/1_EDA.py)", unsafe_allow_html=True)
 with col2:
-    st.page_link("pages/2_Statistical_Analysis.py", label="Statistical", icon="📈")
+    st.markdown(
+        "[📈 Statistical](pages/2_Statistical_Analysis.py)", unsafe_allow_html=True
+    )
 with col3:
-    st.page_link("pages/3_Time_Series_Analysis.py", label="Time Series", icon="🤖")
+    st.markdown(
+        "[🤖 Time Series](pages/3_Time_Series_Analysis.py)", unsafe_allow_html=True
+    )
 with col4:
-    st.page_link("pages/4_Predictive_Analysis.py", label="Predictive", icon="📊")
+    st.markdown(
+        "[📊 Predictive](pages/4_Predictive_Analysis.py)", unsafe_allow_html=True
+    )
 
 
 st.markdown("### 🧾 Dataset Preview")
