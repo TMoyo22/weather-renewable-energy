@@ -33,7 +33,7 @@ st.markdown("""Click on the buttons below to view other aspects of the analysis.
 col1, col2, col3, col4 = st.columns(4)
 with col1:
     st.markdown(
-        '<a href="pages/1_EDA.py" style="text-decoration:none;"><button style="background-color:#4CAF50; color:white; border:none; padding:10px; border-radius:5px;">🔍 EDA</button></a>',
+        '<a href="pages/1_Exploratory_Data_Analysis.py" style="text-decoration:none;"><button style="background-color:#4CAF50; color:white; border:none; padding:10px; border-radius:5px;">🔍 EDA</button></a>',
         unsafe_allow_html=True,
     )
 with col2:
