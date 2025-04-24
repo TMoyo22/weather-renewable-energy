@@ -1,8 +1,5 @@
 import streamlit as st
 import pandas as pd
-import numpy as np
-import seaborn as sb
-import matplotlib.pyplot as plt
 import os
 
 st.title("🌞 Weather & Solar Energy Generation Analysis")
@@ -12,10 +9,8 @@ Understanding the relationship between weather conditions and energy generation 
 This analysis focuses on how weather data affects Global Horizontal Irradiance (GHI) and Energy Delta.
 """)
 
-
 with st.expander("📄 Context and Problem Statement"):
     st.markdown("""
-    
     **Problem Statement:**  
     Solar energy has greatly revolutionized the energy industry, as evidenced by its widespread adoption in the residential market. Despite this, solar intermittency and storage remain barriers to an optimal energy generation system (Team 2024).  
     Analyzing the effects of weather conditions on Global Horizontal Irradiance (GHI) and Energy Delta will assist us in gathering insights into the best daytimes, months, seasons, and conditions that generate the most useful energy (Energy Delta) from solar panels. Analysis of past trends will assist in creating a model that allows for the prediction of high and low usage phases to allow for energy storage planning, cutting costs and reducing energy wastage.  
@@ -26,19 +21,6 @@ with st.expander("📄 Context and Problem Statement"):
     
     The insights from this data will assist energy providers, businesses, solar users, and governments in making well-informed decisions on optimal storage utilization for more stable and sustainable energy consumption.
     """)
-
-st.markdown("### 📊 Analysis Sections")
-st.markdown("""Click on the buttons below to view other aspects of the analysis.""")
-
-col1, col2, col3, col4 = st.columns(4)
-with col1:
-    st.page_link("pages/1_Exploratory.py", label="EDA")
-with col2:
-    st.page_link("pages/2_Statistical.py", label="Statistical")
-with col3:
-    st.page_link("pages/3_Time.py", label="Time Series")
-with col4:
-    st.page_link("pages/4_Predictive.py", label="Predictive")
 
 st.markdown("### 🧾 Dataset Preview")
 st.markdown(
