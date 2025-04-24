@@ -2,9 +2,10 @@ import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 from statsmodels.tsa.seasonal import seasonal_decompose
+import os
 
 # Load dataset
-csv_path = "/Dataset/Renewable.csv"
+csv_path = os.path.join(os.getcwd(), "Dataset", "Renewable.csv")
 df = pd.read_csv(csv_path)
 
 # Preprocess date column

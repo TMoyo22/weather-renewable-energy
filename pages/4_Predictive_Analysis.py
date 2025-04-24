@@ -2,11 +2,12 @@ import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 from models import load_data, prepare_data, train_models, evaluate_model
+import os
 
 st.title("🤖 Predictive Analysis of Solar Energy Generation")
 
 # Load your data and models
-csv_path = "/Dataset/Renewable.csv"
+csv_path = os.path.join(os.getcwd(), "Dataset", "Renewable.csv")
 df = load_data(csv_path)
 X_train, X_test, y_train, y_test = prepare_data(df)
 models = train_models(X_train, y_train)

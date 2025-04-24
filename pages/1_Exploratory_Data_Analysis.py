@@ -7,7 +7,7 @@ import os
 import io
 
 
-csv_path = "/Dataset/Renewable.csv"
+csv_path = os.path.join(os.getcwd(), "Dataset", "Renewable.csv")
 
 if os.path.exists(csv_path):
     df = pd.read_csv(csv_path)

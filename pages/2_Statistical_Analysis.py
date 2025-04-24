@@ -3,6 +3,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 import pandas as pd
 import numpy as np
+import os
 
 
 st.markdown("## 📊 Statistical Analysis of Weather Factors on Energy Generation")
@@ -20,7 +21,7 @@ def load_data(path):
     return pd.read_csv(path)
 
 
-df = load_data("/Dataset/Renewable.csv")
+csv_path = os.path.join(os.getcwd(), "Dataset", "Renewable.csv")
 
 # --- Section 1: Distribution Analysis using Violin & Boxplots ---
 st.subheader("🔍 Distribution of Energy Output under Weather Conditions")
