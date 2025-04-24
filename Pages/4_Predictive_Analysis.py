@@ -31,15 +31,6 @@ model_choice = st.selectbox(
 y_true, y_pred, mae, mse = evaluate_model(models[model_choice], X_test, y_test)
 
 # Plot actual vs predicted
-st.markdown("### 📈 Actual vs Predicted Values")
-fig, ax = plt.subplots()
-ax.plot(y_true[:20], label="Actual", marker="o")
-ax.plot(y_pred[:20], label=f"Predicted - {model_choice}", marker="x")
-ax.set_title(f"{model_choice} Prediction")
-ax.set_xlabel("Sample Index")
-ax.set_ylabel("Energy delta [Wh]")
-ax.legend()
-st.pyplot(fig)
 
 # Scatter plot: Actual vs Predicted
 st.markdown("### 🔬 Scatter Plot: Actual vs Predicted")
