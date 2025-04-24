@@ -28,32 +28,37 @@ with st.expander("📄 Context and Problem Statement"):
     """)
 
 st.markdown("### 📊 Analysis Sections")
-st.markdown("""Click on the links below to view other aspects of the analysis.""")
+st.markdown("""Click on the buttons below to view other aspects of the analysis.""")
 
 col1, col2, col3, col4 = st.columns(4)
 with col1:
-    st.markdown("[🔍 EDA](pages/1_EDA.py)", unsafe_allow_html=True)
+    st.markdown(
+        '<a href="pages/1_EDA.py" style="text-decoration:none;"><button style="background-color:#4CAF50; color:white; border:none; padding:10px; border-radius:5px;">🔍 EDA</button></a>',
+        unsafe_allow_html=True,
+    )
 with col2:
     st.markdown(
-        "[📈 Statistical](pages/2_Statistical_Analysis.py)", unsafe_allow_html=True
+        '<a href="pages/2_Statistical_Analysis.py" style="text-decoration:none;"><button style="background-color:#2196F3; color:white; border:none; padding:10px; border-radius:5px;">📈 Statistical</button></a>',
+        unsafe_allow_html=True,
     )
 with col3:
     st.markdown(
-        "[🤖 Time Series](pages/3_Time_Series_Analysis.py)", unsafe_allow_html=True
+        '<a href="pages/3_Time_Series_Analysis.py" style="text-decoration:none;"><button style="background-color:#FF9800; color:white; border:none; padding:10px; border-radius:5px;">🤖 Time Series</button></a>',
+        unsafe_allow_html=True,
     )
 with col4:
     st.markdown(
-        "[📊 Predictive](pages/4_Predictive_Analysis.py)", unsafe_allow_html=True
+        '<a href="pages/4_Predictive_Analysis.py" style="text-decoration:none;"><button style="background-color:#9C27B0; color:white; border:none; padding:10px; border-radius:5px;">📊 Predictive</button></a>',
+        unsafe_allow_html=True,
     )
-
 
 st.markdown("### 🧾 Dataset Preview")
 st.markdown(
     """ To give an overview of the dataset, we will display the first 5 rows of the dataset using the `.head()` method. This will help us understand the structure and contents of the dataset before diving into the analysis. """
 )
 
-
-csv_path = "/Dataset/Renewable.csv"
+# Fixing the path to the CSV file
+csv_path = os.path.join(os.getcwd(), "Dataset", "Renewable.csv")
 
 if os.path.exists(csv_path):
     df = pd.read_csv(csv_path)
