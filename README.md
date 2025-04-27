@@ -161,7 +161,7 @@ Access the deployed app here:
 
 # 👋 Contributing
 
-Contributions are welcome! Fork this project and create a pull request.
+Contact Us for any suggestions you may have !
 
 ## :scroll: Code of Conduct
 
