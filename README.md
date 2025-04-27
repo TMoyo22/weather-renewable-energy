@@ -70,7 +70,7 @@ This project uses IoT-generated weather and energy data to predict solar energy 
 # 📸 Screenshots
 
 <div align="center">
-  <img src="https://placehold.co/600x400?text=Streamlit+App+Screenshot" alt="screenshot" />
+ <img width="942" alt="Image" src="https://github.com/user-attachments/assets/92d63ee4-6eb6-4743-b558-297bbb106ebf" />
 </div>
 
 # 👽 Tech Stack
