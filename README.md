@@ -12,13 +12,9 @@
  
 
 <h4>
+  <span> · </span>
   <a href="https://weatherdata-energy.streamlit.app/">View App</a>
-  <span> · </span>
-  <a href="https://github.com/your-repo">Documentation</a>
-  <span> · </span>
-  <a href="https://github.com/your-repo/issues/">Report Bug</a>
-  <span> · </span>
-  <a href="https://github.com/your-repo/issues/">Request Feature</a>
+  <span> · </span>  
 </h4>
 </div>
 
