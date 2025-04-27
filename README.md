@@ -8,26 +8,8 @@
   </p>
 
 <!-- Badges -->
-<p>
-  <a href="https://github.com/your-repo/graphs/contributors">
-    <img src="https://img.shields.io/github/contributors/your-repo" alt="contributors" />
-  </a>
-  <a href="">
-    <img src="https://img.shields.io/github/last-commit/your-repo" alt="last update" />
-  </a>
-  <a href="https://github.com/your-repo/network/members">
-    <img src="https://img.shields.io/github/forks/your-repo" alt="forks" />
-  </a>
-  <a href="https://github.com/your-repo/stargazers">
-    <img src="https://img.shields.io/github/stars/your-repo" alt="stars" />
-  </a>
-  <a href="https://github.com/your-repo/issues/">
-    <img src="https://img.shields.io/github/issues/your-repo" alt="open issues" />
-  </a>
-  <a href="https://github.com/your-repo/blob/master/LICENSE">
-    <img src="https://img.shields.io/github/license/your-repo.svg" alt="license" />
-  </a>
-</p>
+
+ 
 
 <h4>
   <a href="https://weatherdata-energy.streamlit.app/">View App</a>
